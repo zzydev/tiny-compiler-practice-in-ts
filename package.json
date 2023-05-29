@@ -1,0 +1,16 @@
+{
+    "name": "tiny-compiler-practice-in-ts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "vitest --ui"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@vitest/ui": "^0.31.1",
+        "vitest": "^0.31.1"
+    }
+}
