@@ -7,4 +7,9 @@ export default defineConfig({
         exclude: ["**/node_modules/**", "**/dist/**"],
         threads: true,
     },
+    resolve: {
+        alias: {
+            shared: "./src/shared/types",
+        },
+    },
 });
