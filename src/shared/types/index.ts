@@ -17,22 +17,26 @@ export interface Node {
 export interface NumberLiteralNode extends Node {
     type: NodeTypes.NumberLiteral;
     value: string;
+    _context?: ChildNode[];
 }
 
 export interface StringLiteralNode extends Node {
     type: NodeTypes.StringLiteral;
     value: string;
+    _context?: ChildNode[];
 }
 
 export interface CallExpressionNode extends Node {
     name: string;
     type: NodeTypes.CallExpression;
     params: ChildNode[];
+    _context?: ChildNode[];
 }
 
 export interface RootNode extends Node {
     body: ChildNode[];
     type: NodeTypes.Program;
+    _context?: ChildNode[];
 }
 
 export function createStringLiteralNode(value): StringLiteralNode {
